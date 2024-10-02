@@ -1,0 +1,23 @@
+.submit-button {
+    color: $text-color; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 50px; 
+    transition: background-color 0.2s; 
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    height: 40px;
+    transition: transform 0.2s; 
+
+    &:hover {
+        cursor: pointer; 
+        transform: translateY(-1px); 
+    }
+
+    &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed; 
+        color: $white-color; 
+    }
+}

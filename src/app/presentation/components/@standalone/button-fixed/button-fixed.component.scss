@@ -1,0 +1,43 @@
+@import '/src/styles.scss';
+
+.central {
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 50%;
+    width: 70px; 
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: fixed; 
+    right: 20px; 
+    bottom: calc(20px + (80px * var(--index))); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+    border: 1px solid $white-color;
+    transition: transform 0.2s; 
+
+    .icono-mas {
+      font-size: 32px; 
+    }
+
+    &:hover {
+      transform: translateY(-5px); 
+      cursor: pointer;
+    }
+
+    span {
+      font-size: 12px; 
+      margin-top: 10px; 
+      display: block; 
+      text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+  .central{
+    width: 60px; 
+    height: 60px; 
+  }
+}
