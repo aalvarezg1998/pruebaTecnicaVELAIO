@@ -1,0 +1,57 @@
+@import '/src/scss/variables.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-size: 36px;
+    color: $text-color
+}
+
+.text-container h2 {
+    font-size: 72px;
+    color: $error-color;
+}
+
+.text-container p {
+    margin: 20px 0;
+    color: $text-color
+}
+
+@media (max-width: 767px) {
+    .text-media{
+        font-size: 12px;
+    }
+    .image-container {
+        display: none;
+    }
+}

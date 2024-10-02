@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-button-fixed [index]="0" [route]="'/create-task'" [option]="'add'"></app-button-fixed>
+<app-button-fixed [index]="1" [route]="'/list-task'" [option]="'list'"></app-button-fixed>
+<app-button-fixed [index]="2" [route]="'/home'" [option]="'home'"></app-button-fixed>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

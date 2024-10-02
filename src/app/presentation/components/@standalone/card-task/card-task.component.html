@@ -1,0 +1,25 @@
+<div style="margin-bottom: 5%;">
+    <div *ngFor="let task of tasks">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-subtitle">
+                    <strong>N° {{ task.id }} - {{ task.nameTask }} - {{ task.finalDate | date: 'yyyy/MM/dd HH:mm:ss' }}</strong>
+                </div>
+                <div class="card-description">
+                    <p> <strong>Personas Asociadas:</strong> </p>
+                    <ul *ngFor="let person of task.persons" start="1">
+                        <li>{{ person.namePerson }} (Edad: {{ person.age }})</li>
+                        <span>Habilidades: </span>
+                        <ul *ngFor="let skill of person.skills">
+                            <li> {{ skill.nameSkiller }} </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="center">
+                    <button (click)="completedTask(task)" type="submit" class="submit-button color-secundary" [disabled]="task.completed">{{ task.completed ? "¡ Tarea completada !": "Completar Tarea" }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-container #alertContainer></ng-container>

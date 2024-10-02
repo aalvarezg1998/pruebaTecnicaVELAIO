@@ -1,0 +1,34 @@
+.form-item {
+  margin-bottom: 15px;
+}
+
+.form-item label:not(.checkboxLabel) {
+  display: inline-block;
+  background-color: $white-color;
+  position: absolute;
+  padding: 0 5px;
+  transform: translate(10px, -10px);
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="datetime-local"],
+select {
+  border: 1px solid $border-color;
+  height: 40px;
+  padding: 0 1rem;
+  width: auto;
+  outline: none;
+  transition: background 0.5s;
+  font-size: 18px;
+  border-radius: 10px;
+  color: $text-color;
+  font-family: 'Montserrat', 'Poppins', sans-serif; 
+}
+
+input[type="date"] {
+    width: 100%;
+}

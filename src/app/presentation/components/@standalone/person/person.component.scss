@@ -1,0 +1,95 @@
+@import "/src/scss/variables.scss";
+
+.delete-button {
+    background-color: $error-color;
+    color: $text-color; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px; 
+    transition: background-color 0.2s; 
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s; 
+    &:hover {
+        cursor: pointer; 
+        border: 1px solid $border-color;
+        transform: translateY(-1px); 
+    }
+
+    &:disabled {
+        background-color: #cccccc; 
+        cursor: not-allowed; 
+    }
+}
+
+.add-button {
+    background-color: $success-color;
+    color: $text-color; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px; 
+    transition: background-color 0.2s; 
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s; 
+    &:hover {
+        cursor: pointer; 
+        border: 1px solid $border-color;
+        transform: translateY(-1px); 
+    }
+
+    &:disabled {
+        background-color: #cccccc; 
+        cursor: not-allowed; 
+    }
+}
+
+.add-person-button, 
+.delete-person-button {
+    background-color: $tertiary-color;
+    color: $text-color;  
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    transition: background-color 0.2s; 
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    height: 40px;
+    transition: transform 0.2s; 
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $border-color;
+        transform: translateY(-1px); 
+    }
+
+    &:disabled {
+        background-color: #cccccc; 
+        cursor: not-allowed; 
+    }
+
+}
+
+.add-person-button {
+    background-color: $success-color;
+}
+
+hr{
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .actions-button{
+        margin-bottom: 20px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+}
